@@ -1,0 +1,136 @@
+/* body{
+    margin:0;
+    padding:0;
+}
+h1{
+    text-align:center;
+}
+#date{
+    width:50wh;
+    Height:50%;
+    align-items:center;
+    text-align:center;
+    justify-content:center;
+
+} */
+
+
+body {
+    background: linear-gradient(to right bottom, #ff7e5f, #feb47b, #ffcc00);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333; 
+}
+
+#container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    animation: fadeIn 1s ease-out;
+}
+
+h1 {
+    color: #e91e63; 
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    text-shadow: 2px 2px 4px rgba(255, 204, 0, 0.5);
+}
+
+div:has(label, input, button) {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+    margin-bottom: 25px;
+}
+
+label {
+    font-weight: bold;
+    color: #4a4a4a;
+    text-align: left;
+    margin-bottom: -5px; 
+}
+
+#date {
+    padding: 12px;
+    border: 3px solid #ff9800; 
+    border-radius: 10px;
+    font-size: 1.1em;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+#date:focus {
+    border-color: #e91e63; 
+    outline: none;
+}
+
+
+#calculate-btn, #add-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#calculate-btn {
+    background-color: #00bcd4; 
+    color: white;
+}
+
+#calculate-btn:hover {
+    background-color: #0097a7;
+    transform: translateY(-2px); 
+}
+
+#add-btn {
+    background-color: #ffcc00; 
+    color: #333;
+}
+
+#add-btn:hover {
+    background-color: #ffb300;
+    transform: scale(1.02); 
+}
+
+#result-display {
+    padding: 20px;
+    background-color: #fff9e6; 
+    border: 1px dashed #ff9800;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#result-display p {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #333;
+}
+
+.happy-birthday {
+    color: #e91e63;
+    font-size: 1.6em !important;
+    animation: confetti-pulse 0.8s infinite alternate;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes confetti-pulse {
+    0% { transform: scale(1); box-shadow: 0 0 5px rgba(233, 30, 99, 0.5); }
+    100% { transform: scale(1.05); box-shadow: 0 0 15px rgba(233, 30, 99, 1); }
+}
